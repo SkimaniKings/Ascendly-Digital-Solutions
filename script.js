@@ -46,7 +46,7 @@ function flipCard(card) {
   card.classList.toggle("flipped");
 }
 
-// Optional: close flipped card when clicking outside
+// close flipped card when clicking outside
 document.addEventListener("click", function (e) {
   const cards = document.querySelectorAll(".card");
   cards.forEach(card => {
@@ -55,3 +55,5 @@ document.addEventListener("click", function (e) {
     }
   });
 });
+
+// Contact Page

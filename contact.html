@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Ascendly Digital Solutions</title>
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome (icons) -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (use your existing navbar markup/styles) ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo"/>
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+
+    <div class="cta-desktop">
+      <a class="hire-btn" href="#"><span>Hire Us</span></a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="services-hero">
+    <div>
+      <h1>Get In Touch</h1>
+      <div class="underline"></div>
+      <p>We’d love to hear about your project. Reach out with questions or to get a quote — we’ll respond quickly.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT AREA: form (left) + info (right) ===== -->
+  <section class="contact-main">
+    <div class="contact-wrapper">
+
+      <!-- Contact Form (LEFT on large screens) -->
+      <div class="contact-form-card" id="contactFormCard">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="https://formspree.io/f/mqagbnja" method="POST">
+          <label class="visually-hidden" for="name">Full name</label>
+          <input id="name" type="text" placeholder="Full name" required />
+
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" type="email" placeholder="Email address" required />
+
+          <label class="visually-hidden" for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="Subject (optional)" />
+
+          <label class="visually-hidden" for="message">Message</label>
+          <textarea id="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+          </div>
+
+          <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- Contact Info (RIGHT on large screens) -->
+      <div class="contact-info-card" id="contactInfoCard">
+        <h2>Contact Information</h2>
+        <p>We’re ready to partner with you. Use the form or reach us directly via the details below.</p>
+
+        <div class="info-list">
+          <div class="info-item"><i class="fas fa-phone"></i><span>+254 712 345 678</span></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><span><a href="mailto:info@ascendly.com">info@ascendly.com</a></span></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>123 Innovation Drive, Nairobi, Kenya</span></div>
+          <div class="info-item"><i class="fas fa-clock"></i><span>Mon–Fri 09:00–18:00</span></div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="quick-links">
+          <a href="index.html">Home</a> •
+          <a href="services.html">Services</a> •
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUOTE CAROUSEL -->
+<section class="quote-carousel">
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <p>“Innovation distinguishes between a leader and a follower.”</p>
+      <span>— Steve Jobs</span>
+      <p class="quote-context">At Ascendly, we lead through innovation—crafting digital solutions that don’t just follow trends, but set them.</p>
+    </div>
+    <div class="carousel-slide">
+      <p>“Design creates culture. Culture shapes values. Values determine the future.”</p>
+      <span>— Robert L. Peters</span>
+      <p class="quote-context">We believe thoughtful design builds meaningful digital experiences that reflect your brand’s values and shape your audience’s future.</p>
+    </div>
+    <div class="carousel-slide">
+      <p>“The best way to predict the future is to create it.”</p>
+      <span>— Peter Drucker</span>
+      <p class="quote-context">Ascendly partners with visionaries to build the digital future—today—through strategy, technology, and creativity.</p>
+    </div>
+
+    <!-- Navigation arrows -->
+    <button class="carousel-prev" aria-label="Previous quote">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-next" aria-label="Next quote">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Dots -->
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</section>
+  <!-- ===== CTA ===== -->
+  <div class="start-project">
+    <a class="start-btn" href="services.html">🚀 Let’s Start Your Project</a>
+  </div>
+
+  <!-- main script -->
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
