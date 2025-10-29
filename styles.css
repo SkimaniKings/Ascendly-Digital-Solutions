@@ -409,7 +409,7 @@ body {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .service-card {
@@ -477,5 +477,162 @@ display: inline-block;
   }
   .hero p {
     font-size: 16px;
+  }
+}
+/* Web Development Page */
+
+.breadcrumb {
+  padding: 1rem 2rem;
+  background: #f2f2f2;
+  font-size: 0.95rem;
+}
+
+.breadcrumb a {
+  color: #0a2342;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.webdev-intro {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #0a2342;
+  font-weight: 700;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: gold;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+.webdev-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  backface-visibility: hidden;
+  background: #fff;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-front:hover {
+  transform: translateY(-10px);
+}
+
+.card-back {
+  background: #0a2342;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card h2, .card h3 {
+  color: #0a2342;
+}
+
+.card-back h3 {
+  color: gold;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.card-back ul {
+  color: #f5f5f5;
+}
+
+.back-btn-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.back-btn {
+  background: gold;
+  color: #0a2342;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #0a2342;
+  color: gold;
+  transform: scale(1.05);
+}
+.click-hint {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+  animation: pulse 2s infinite;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+
+@media (max-width: 992px) {
+  .webdev-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .webdev-services {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
   }
 }

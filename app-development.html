@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Development | Ascendly Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo">
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="cta-desktop">
+      <a href="#" class="hire-btn"><span>Hire Us</span></a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="cta-mobile">Hire Us</a>
+    </div>
+  </div>
+
+<!-- ===== BREADCRUMB ===== -->
+<section class="breadcrumb">
+  <p><a href="index.html">Home</a> > <a href="services.html">Services</a> > App Development</p>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="webdev-intro">
+  <h1 class="page-title">App Development</h1>
+  <div class="underline"></div>
+  <p>We design and develop innovative, user-friendly, and high-performance mobile applications that help businesses stay connected with their audiences. Whether iOS, Android, or cross-platform, we deliver seamless digital experiences.</p>
+</section>
+
+<p class="click-hint">💡 Click any card to view detailed pricing.</p>
+
+<!-- ===== APP DEVELOPMENT SERVICES ===== -->
+<section class="webdev-services">
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>iOS App Development</h2>
+        <p>We craft elegant and high-performing iOS applications tailored to Apple’s ecosystem and user expectations.</p>
+        <ul>
+          <li>Swift and SwiftUI development</li>
+          <li>App Store deployment</li>
+          <li>Optimized UI/UX for iOS devices</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic iOS App: $2000</li>
+          <li>Advanced iOS App: $4000+</li>
+          <li>Enterprise iOS Solution: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Android App Development</h2>
+        <p>From concept to deployment, we build scalable Android apps that perform seamlessly across all devices.</p>
+        <ul>
+          <li>Kotlin & Java development</li>
+          <li>Play Store publishing</li>
+          <li>Custom backend integration</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Android App: $1800</li>
+          <li>Advanced App: $3500+</li>
+          <li>Enterprise Solution: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cross-Platform Development</h2>
+        <p>Leverage a single codebase for both iOS and Android using modern frameworks like Flutter or React Native.</p>
+        <ul>
+          <li>Unified design and functionality</li>
+          <li>Reduced development time</li>
+          <li>Consistent user experience</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Hybrid App: $2500</li>
+          <li>Advanced App: $4500+</li>
+          <li>Enterprise Integration: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>UI/UX Design for Apps</h2>
+        <p>We create visually appealing and intuitive interfaces that enhance usability and drive engagement.</p>
+        <ul>
+          <li>Interactive prototypes</li>
+          <li>Usability testing</li>
+          <li>Design system creation</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>UI Mockups: $800</li>
+          <li>Full App Design: $1500+</li>
+          <li>UX Testing & Optimization: $500+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>App Maintenance & Support</h2>
+        <p>We provide continuous maintenance, updates, and support to ensure your app remains stable and secure.</p>
+        <ul>
+          <li>Bug fixing and performance updates</li>
+          <li>Version upgrades</li>
+          <li>Feature enhancements</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Plan: $100/month</li>
+          <li>Premium Plan: $250/month</li>
+          <li>Enterprise Plan: $500/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="back-btn-container">
+  <a href="services.html" class="back-btn">← Back to Services</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

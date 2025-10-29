@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing | Ascendly Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo">
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="cta-desktop">
+      <a href="#" class="hire-btn"><span>Hire Us</span></a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="cta-mobile">Hire Us</a>
+    </div>
+  </div>
+
+<!-- ===== BREADCRUMB ===== -->
+<section class="breadcrumb">
+  <p><a href="index.html">Home</a> > <a href="services.html">Services</a> > Digital Marketing</p>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="webdev-intro">
+  <h1 class="page-title">Digital Marketing</h1>
+  <div class="underline"></div>
+  <p>We help brands grow, engage, and convert with powerful digital marketing strategies. From social media management to data-driven campaigns, we ensure your business thrives in today’s competitive online landscape.</p>
+</section>
+
+<p class="click-hint">💡 Click any card to view detailed pricing.</p>
+
+<!-- ===== DIGITAL MARKETING SERVICES ===== -->
+<section class="webdev-services">
+
+  <!-- CARD 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Social Media Marketing</h2>
+        <p>We build your brand’s presence across platforms like Instagram, Facebook, LinkedIn, and TikTok through engaging, consistent, and data-backed strategies.</p>
+        <ul>
+          <li>Account setup and branding</li>
+          <li>Content scheduling and management</li>
+          <li>Community engagement and analytics</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Starter Plan: $300/month</li>
+          <li>Professional Plan: $600/month</li>
+          <li>Premium Growth Plan: $1000/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Search Engine Marketing (SEM)</h2>
+        <p>Drive traffic and conversions through targeted paid advertising campaigns on Google Ads and Bing Ads.</p>
+        <ul>
+          <li>Keyword research and ad creation</li>
+          <li>Bid optimization and budget management</li>
+          <li>Performance tracking and reporting</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Campaign Setup: $400</li>
+          <li>Monthly Management: $600+</li>
+          <li>Enterprise PPC Strategy: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Search Engine Optimization (SEO)</h2>
+        <p>Boost your organic rankings and attract long-term traffic through tailored on-page and off-page SEO strategies.</p>
+        <ul>
+          <li>Comprehensive keyword research</li>
+          <li>Technical and content optimization</li>
+          <li>Backlink building and reporting</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Starter SEO: $500/month</li>
+          <li>Advanced SEO: $1000/month</li>
+          <li>Full SEO Suite: $1500+/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Content Marketing</h2>
+        <p>We craft compelling content that educates, engages, and inspires your audience — driving conversions and brand loyalty.</p>
+        <ul>
+          <li>Blog writing and article optimization</li>
+          <li>Visual and video storytelling</li>
+          <li>Content calendars and strategy plans</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Content Starter Pack: $400</li>
+          <li>Monthly Content Strategy: $800+</li>
+          <li>Video & Visual Bundle: $1200+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Email Marketing</h2>
+        <p>Reach your customers directly with impactful, personalized, and conversion-focused email campaigns.</p>
+        <ul>
+          <li>Campaign design and automation</li>
+          <li>Segmentation and personalization</li>
+          <li>Performance analytics and A/B testing</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Campaign: $250</li>
+          <li>Automated Drip Sequence: $600+</li>
+          <li>Comprehensive Email Suite: $1000+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Analytics & Conversion Optimization</h2>
+        <p>Transform your marketing data into actionable insights that maximize conversions and improve ROI.</p>
+        <ul>
+          <li>Google Analytics & Tag Manager setup</li>
+          <li>Funnel analysis & optimization</li>
+          <li>Performance dashboards and insights</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Analytics Setup: $300</li>
+          <li>Conversion Audit: $600</li>
+          <li>Full Optimization Plan: $1200+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="back-btn-container">
+  <a href="services.html" class="back-btn">← Back to Services</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

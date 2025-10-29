@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascendly Digital Solutions | IT Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo">
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <!-- Nav Links (desktop) -->
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hire Us CTA -->
+    <div class="cta-desktop">
+      <a href="#" class="hire-btn"><span>Hire Us</span></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Slide-out Menu (mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="cta-mobile">Hire Us</a>
+    </div>
+  </div>
+
+<!-- ===== BREADCRUMB ===== -->
+<section class="breadcrumb">
+  <p><a href="index.html">Home</a> > <a href="services.html">Services</a> > IT Support</p>
+</section>
+
+<!-- ===== PAGE INTRO ===== -->
+<section class="webdev-intro">
+  <h1 class="page-title">IT Support</h1>
+  <div class="underline"></div>
+  <p>Our dedicated IT support team ensures smooth operations, minimizing downtime and resolving technical issues quickly and efficiently. 
+  We provide end-to-end solutions to keep your business running at peak performance with reliable, responsive, and proactive support services.</p>
+</section>
+
+<p class="click-hint">💡 Click any card to view detailed pricing.</p>
+
+<!-- ===== IT SUPPORT SERVICES ===== -->
+<section class="webdev-services">
+
+  <!-- CARD 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Helpdesk Support</h2>
+        <p>24/7 technical assistance for all your business IT issues, ensuring minimal disruption and quick resolution times.</p>
+        <ul>
+          <li>Remote troubleshooting</li>
+          <li>Hardware & software assistance</li>
+          <li>Incident tracking and reporting</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Plan: $200/month</li>
+          <li>Standard Plan: $400/month</li>
+          <li>Premium Plan: $700/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Network Management</h2>
+        <p>Comprehensive network monitoring and optimization to maintain fast, secure, and stable connectivity across all systems.</p>
+        <ul>
+          <li>Network configuration</li>
+          <li>Bandwidth optimization</li>
+          <li>Firewall setup & management</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Network Setup: $500</li>
+          <li>Ongoing Monitoring: $250/month</li>
+          <li>Advanced Network Solutions: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>System Maintenance</h2>
+        <p>Keep your systems up-to-date and operating at peak efficiency with proactive maintenance and updates.</p>
+        <ul>
+          <li>Regular software updates</li>
+          <li>System health checks</li>
+          <li>Performance optimization</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Maintenance: $300/month</li>
+          <li>Premium Maintenance: $600/month</li>
+          <li>Enterprise Plan: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Data Backup & Recovery</h2>
+        <p>Secure your critical data with automated backup and reliable recovery solutions to prevent data loss or downtime.</p>
+        <ul>
+          <li>Cloud and local backups</li>
+          <li>Disaster recovery planning</li>
+          <li>Data restoration testing</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Backup: $150/month</li>
+          <li>Advanced Recovery: $400/month</li>
+          <li>Enterprise Protection: $800/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Remote IT Support</h2>
+        <p>Resolve issues from anywhere with our efficient remote IT support team that ensures minimal downtime and instant troubleshooting.</p>
+        <ul>
+          <li>Secure remote access</li>
+          <li>Quick troubleshooting</li>
+          <li>24/7 availability</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Hourly Rate: $60/hr</li>
+          <li>Monthly Plan: $400/month</li>
+          <li>Dedicated Technician: $1000/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>IT Consultation & Strategy</h2>
+        <p>Enhance your business technology with professional guidance on infrastructure planning, upgrades, and digital transformation.</p>
+        <ul>
+          <li>Infrastructure assessment</li>
+          <li>Strategic IT planning</li>
+          <li>Technology implementation roadmap</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Consultation Session: $150/hr</li>
+          <li>Full Strategy Plan: $1200</li>
+          <li>Implementation Package: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== BACK BUTTON ===== -->
+<div class="back-btn-container">
+  <a href="services.html" class="back-btn">← Back to Services</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -41,3 +41,17 @@ document.querySelector(".back-btn")?.addEventListener("click", (e) => {
     behavior: "smooth"
   });
 });
+// Web Development Page
+function flipCard(card) {
+  card.classList.toggle("flipped");
+}
+
+// Optional: close flipped card when clicking outside
+document.addEventListener("click", function (e) {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach(card => {
+    if (!card.contains(e.target)) {
+      card.classList.remove("flipped");
+    }
+  });
+});

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascendly Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo">
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <!-- Nav Links (desktop) -->
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hire Us CTA (desktop only) -->
+    <div class="cta-desktop">
+      <a href="#" class="hire-btn"><span>Hire Us</span></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Slide-out Menu (mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="cta-mobile">Hire Us</a>
+    </div>
+  </div>
+
+  <!-- Web Development Page Content -->
+<section class="breadcrumb">
+  <p><a href="index.html">Home</a> > <a href="services.html">Services</a> > Web Development</p>
+</section>
+
+<section class="webdev-intro">
+  <h1 class="page-title">Web Development</h1>
+  <div class="underline"></div>
+  <p>We build sleek, responsive, and high-performance websites that help your business grow online. 
+  From dynamic landing pages to full-scale e-commerce platforms, we bring your vision to life with technology and creativity.</p>
+</section>
+<p class="click-hint">💡 Click any card to view detailed pricing.</p>
+
+
+<section class="webdev-services">
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Custom Website Design</h2>
+        <p>We craft unique, modern, and responsive websites tailored to your brand’s personality and goals.</p>
+        <ul>
+          <li>Fully responsive layouts</li>
+          <li>SEO-friendly architecture</li>
+          <li>Cross-browser compatibility</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Landing Page: $300</li>
+          <li>5-Page Website: $800</li>
+          <li>Custom Design Package: $1200+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>E-Commerce Development</h2>
+        <p>We build secure and scalable e-commerce websites that convert visitors into loyal customers.</p>
+        <ul>
+          <li>Product management system</li>
+          <li>Payment gateway integration</li>
+          <li>Inventory and order tracking</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Store Setup: $1000</li>
+          <li>Advanced Features: $2000+</li>
+          <li>Maintenance: $150/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Website Maintenance</h2>
+        <p>Keep your website running smoothly with our dedicated support and maintenance services.</p>
+        <ul>
+          <li>Regular updates and backups</li>
+          <li>Security monitoring</li>
+          <li>Performance optimization</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Plan: $100/month</li>
+          <li>Premium Plan: $250/month</li>
+          <li>Enterprise Plan: $500/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Web App Development</h2>
+        <p>We create powerful web applications using modern frameworks for high performance and scalability.</p>
+        <ul>
+          <li>Custom-built web apps</li>
+          <li>API integration</li>
+          <li>Responsive user interfaces</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic App: $1500</li>
+          <li>Advanced App: $3000+</li>
+          <li>Enterprise Solution: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>SEO Optimization</h2>
+        <p>Improve your online visibility with data-driven SEO strategies for lasting growth.</p>
+        <ul>
+          <li>Keyword analysis & content strategy</li>
+          <li>On-page/off-page optimization</li>
+          <li>Monthly analytics reports</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Starter SEO: $500</li>
+          <li>Advanced SEO: $1000</li>
+          <li>Comprehensive SEO: $1500+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Content Management Systems</h2>
+        <p>Manage your content with ease using intuitive and flexible CMS solutions like WordPress or custom-built systems.</p>
+        <ul>
+          <li>Custom CMS setup</li>
+          <li>Training & support</li>
+          <li>Plugin & feature integration</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic CMS Setup: $600</li>
+          <li>Advanced Custom CMS: $1200+</li>
+          <li>Support & Maintenance: $100/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="back-btn-container">
+  <a href="services.html" class="back-btn">← Back to Services</a>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

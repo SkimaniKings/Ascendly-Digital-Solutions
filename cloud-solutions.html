@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Solutions | Ascendly Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="Images/logo1.png" alt="Ascendly Logo" class="logo">
+      <div class="brand">
+        <span class="brand-name">Ascendly Digital Solutions</span>
+        <span class="tagline">Empowering your ascent in the digital world</span>
+      </div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="cta-desktop">
+      <a href="#" class="hire-btn"><span>Hire Us</span></a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="cta-mobile">Hire Us</a>
+    </div>
+  </div>
+
+<!-- ===== BREADCRUMB ===== -->
+<section class="breadcrumb">
+  <p><a href="index.html">Home</a> > <a href="services.html">Services</a> > Cloud Solutions</p>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="webdev-intro">
+  <h1 class="page-title">Cloud Solutions</h1>
+  <div class="underline"></div>
+  <p>We provide cloud integration, migration, and management services that ensure flexibility, scalability, and data security. 
+  Our cloud solutions empower businesses to work smarter, reduce costs, and innovate faster in a digital-first world.</p>
+</section>
+
+<p class="click-hint">💡 Click any card to view detailed pricing.</p>
+
+<!-- ===== CLOUD SERVICES SECTION ===== -->
+<section class="webdev-services">
+
+  <!-- CARD 1 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Migration</h2>
+        <p>Seamlessly move your data, applications, and workloads to the cloud with minimal disruption and maximum efficiency.</p>
+        <ul>
+          <li>End-to-end migration planning</li>
+          <li>Data transfer and configuration</li>
+          <li>Post-migration support and optimization</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Migration: $800</li>
+          <li>Advanced Cloud Transfer: $1500+</li>
+          <li>Full Enterprise Migration: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Infrastructure Setup</h2>
+        <p>We design and deploy secure, scalable, and cost-efficient cloud environments that fit your business requirements.</p>
+        <ul>
+          <li>AWS, Azure, or Google Cloud setup</li>
+          <li>Storage and compute configuration</li>
+          <li>Scalability and resource optimization</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Setup: $1000</li>
+          <li>Custom Cloud Architecture: $2000+</li>
+          <li>Ongoing Support: $150/month</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Security & Compliance</h2>
+        <p>Ensure the integrity and safety of your cloud assets with advanced protection, monitoring, and compliance management.</p>
+        <ul>
+          <li>Data encryption and access control</li>
+          <li>Threat detection and prevention</li>
+          <li>Compliance with ISO, GDPR, and SOC standards</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Security Audit: $500</li>
+          <li>Advanced Protection Suite: $1200+</li>
+          <li>Compliance Implementation: $2000+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Integration</h2>
+        <p>Integrate your cloud environment with on-premise systems or third-party platforms for seamless operations.</p>
+        <ul>
+          <li>API and data integration</li>
+          <li>Hybrid cloud setup</li>
+          <li>Workflow automation and testing</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Integration: $700</li>
+          <li>Advanced Cloud Linking: $1500+</li>
+          <li>Enterprise Integration: $2500+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Backup & Recovery</h2>
+        <p>Safeguard your business continuity with reliable, automated cloud backup and disaster recovery solutions.</p>
+        <ul>
+          <li>Data backup automation</li>
+          <li>Disaster recovery planning</li>
+          <li>24/7 monitoring and data restoration</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Backup Setup: $400</li>
+          <li>Disaster Recovery Plan: $800+</li>
+          <li>Full Protection Package: $1500+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Cloud Management & Optimization</h2>
+        <p>We monitor, manage, and optimize your cloud resources to ensure consistent performance and cost-efficiency.</p>
+        <ul>
+          <li>24/7 monitoring and resource scaling</li>
+          <li>Performance tuning and cost control</li>
+          <li>Regular maintenance and reporting</li>
+        </ul>
+      </div>
+      <div class="card-back">
+        <h3>Pricing Breakdown</h3>
+        <ul>
+          <li>Basic Monitoring: $300/month</li>
+          <li>Pro Management: $600/month</li>
+          <li>Enterprise Optimization: Custom Quote</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== BACK BUTTON ===== -->
+<div class="back-btn-container">
+  <a href="services.html" class="back-btn">← Back to Services</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
