@@ -56,4 +56,26 @@ document.addEventListener("click", function (e) {
   });
 });
 
-// Contact Page
+// Hire Us Page
+// ===== Scroll Animations for timeline & testimonials =====
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+document.querySelectorAll(".timeline-item, .testimonial-card").forEach((el) => observer.observe(el));
+
+// ===== Form Behavior =====
+const form = document.querySelector(".hire-form form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("✅ Thank you for your request! Our team will contact you shortly.");
+  form.reset();
+});
